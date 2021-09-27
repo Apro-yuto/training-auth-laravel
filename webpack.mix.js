@@ -1,5 +1,6 @@
 const mix = require('laravel-mix');
 
+const glob = require('glob');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -17,6 +18,12 @@ mix.js('resources/js/app.js', 'public/js').vue()
         require('tailwindcss'),
     ])
     .webpackConfig(require('./webpack.config'));
+
+glob.sync('resources/sass/*.scss').map(function(file)  {
+
+    mix.sass(file, 'public/css')
+
+})
 
 if (mix.inProduction()) {
     mix.version();

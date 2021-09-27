@@ -26,7 +26,7 @@ Route::get('/', function () {
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/home', function () {
-        return Inertia::render('Home');
+        return Inertia::render('Home/index');
     })->name('home');
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
