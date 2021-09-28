@@ -94,10 +94,10 @@
 
             <footer class="layout_footer">
                 <div class="layout_footer-sns">
-                    <a href="https://github.com/Apro-yuto" class="block hover:opacity-50">
+                    <a href="https://github.com/Apro-yuto">
                         Github
                     </a>
-                    <a href="https://twitter.com/A_pro_yuto" class="block hover:opacity-50">
+                    <a href="https://twitter.com/A_pro_yuto">
                         Twitter
                     </a>
                 </div>

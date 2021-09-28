@@ -39,12 +39,6 @@ img {
   display: block;
 }
 
-a {
-  &:hover{
-    text-decoration: underline;
-  }
-}
-
 .clear {
   &::after {
     content: "";

@@ -16,10 +16,6 @@ img {
   display: block;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 .clear::after {
   content: "";
   display: block;
@@ -191,6 +187,12 @@ a:hover {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
+}
+.layout_footer-sns a {
+  display: block;
+}
+.layout_footer-sns a:hover {
+  opacity: 0.5;
 }
 .layout_footer-copy {
   display: block;

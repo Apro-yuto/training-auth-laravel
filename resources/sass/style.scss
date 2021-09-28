@@ -152,6 +152,12 @@
       display: flex;
       justify-content: space-between;
       padding: 1rem 0;
+      a {
+        display: block;
+        &:hover {
+          opacity: .5;
+        }
+      }
     }
     &-copy {
       display: block;
