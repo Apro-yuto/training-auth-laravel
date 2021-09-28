@@ -7,7 +7,11 @@
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
         "prod": "npm run production",
-        "production": "mix --production"
+        "production": "mix --production",
+        "format": "prettier --check ./resources",
+        "format:fix": "prettier --write ./resources",
+        "lint": "eslint ./resources",
+        "lint:fix": "eslint --fix ./resources"
     },
     "devDependencies": {
         "@inertiajs/inertia": "^0.10.0",
@@ -17,6 +21,8 @@
         "@tailwindcss/typography": "^0.3.0",
         "@vue/compiler-sfc": "^3.0.5",
         "axios": "^0.21",
+        "eslint": "^7.32.0",
+        "eslint-plugin-vue": "^7.18.0",
         "husky": "^7.0.2",
         "laravel-mix": "^6.0.6",
         "lint-staged": "^11.1.2",
