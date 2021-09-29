@@ -1,5 +1,5 @@
 <template>
-    <p>Homeダオ。</p>
+    <p>Homeダオ。TEST</p>
     <p>{{ $page.props.user }}</p>
 
 </template>
