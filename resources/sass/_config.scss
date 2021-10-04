@@ -15,7 +15,7 @@ $Bmaru: 'TsukuBRdGothic-Regular';
 }
 
 @function vw($px) {
-  @return $px /  1440 * 100vw;
+  @return $px / 1440 * 100vw;
 }
 
 @function vwsp($px) {
@@ -24,12 +24,12 @@ $Bmaru: 'TsukuBRdGothic-Regular';
 
 .forSp {
   @include pc {
-    display: none!important;
+    display: none !important;
   }
 }
 .forPc {
   @include sp {
-    display: none!important;
+    display: none !important;
   }
 }
 
@@ -41,7 +41,7 @@ img {
 
 .clear {
   &::after {
-    content: "";
+    content: '';
     display: block;
     clear: both;
   }

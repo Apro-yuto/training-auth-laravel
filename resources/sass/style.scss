@@ -17,7 +17,7 @@
     &_wrapper {
       // max-width: 36rem;
       margin: 0 auto;
-      padding: .5rem 1rem;
+      padding: 0.5rem 1rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -36,7 +36,7 @@
       transition-duration: 150ms;
       transition-delay: 150ms;
       &:hover {
-        opacity: .6;
+        opacity: 0.6;
       }
     }
     &_right {
@@ -68,7 +68,8 @@
       color: rgba(107, 114, 128, var(--tw-text-opacity));
       --tw-bg-opacity: 1;
       background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-      transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+      transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow,
+        transform, filter, backdrop-filter;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transition-duration: 150ms;
       &:hover {
@@ -109,7 +110,7 @@
     }
   }
   &_option {
-    padding: 1rem 0 .5rem 0;
+    padding: 1rem 0 0.5rem 0;
     border-top-width: 1px;
     --tw-border-opacity: 1;
     border-color: rgba(229, 231, 235, var(--tw-border-opacity));
@@ -155,7 +156,7 @@
       a {
         display: block;
         &:hover {
-          opacity: .5;
+          opacity: 0.5;
         }
       }
     }
