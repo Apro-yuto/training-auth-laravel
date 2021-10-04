@@ -8,17 +8,29 @@
                     <jet-authentication-card-logo />
                 </div>
 
-                <div v-html="policy" class="w-full sm:max-w-2xl mt-6 p-6 bg-white shadow-md overflow-hidden sm:rounded-lg prose">
-                </div>
+                <div
+                    v-html="policy"
+                    class="
+                        w-full
+                        sm:max-w-2xl
+                        mt-6
+                        p-6
+                        bg-white
+                        shadow-md
+                        overflow-hidden
+                        sm:rounded-lg
+                        prose
+                    "
+                ></div>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 import { Head } from '@inertiajs/inertia-vue3';
-import JetAuthenticationCardLogo from '@/Jetstream/AuthenticationCardLogo.vue'
+import JetAuthenticationCardLogo from '@/Jetstream/AuthenticationCardLogo.vue';
 
 export default defineComponent({
     props: ['policy'],
@@ -27,5 +39,5 @@ export default defineComponent({
         Head,
         JetAuthenticationCardLogo,
     },
-})
+});
 </script>
