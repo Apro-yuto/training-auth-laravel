@@ -1,0 +1,48 @@
+$sp-size: 375;
+$wig: wigwag-bold;
+$Bmaru: 'TsukuBRdGothic-Regular';
+
+@mixin pc {
+  @media screen and (min-width: 751px) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: 750px) {
+    @content;
+  }
+}
+
+@function vw($px) {
+  @return $px / 1440 * 100vw;
+}
+
+@function vwsp($px) {
+  @return $px / $sp-size * 100vw;
+}
+
+.forSp {
+  @include pc {
+    display: none !important;
+  }
+}
+.forPc {
+  @include sp {
+    display: none !important;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.clear {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
