@@ -9,17 +9,17 @@
 </template>
 
 <script>
-    import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
-    export default defineComponent({
-        computed: {
-            errors() {
-                return this.$page.props.errors
-            },
+export default defineComponent({
+    computed: {
+        errors() {
+            return this.$page.props.errors;
+        },
 
-            hasErrors() {
-                return Object.keys(this.errors).length > 0;
-            },
-        }
-    })
+        hasErrors() {
+            return Object.keys(this.errors).length > 0;
+        },
+    },
+});
 </script>
