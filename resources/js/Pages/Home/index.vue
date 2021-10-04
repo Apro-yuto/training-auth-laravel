@@ -1,7 +1,7 @@
 <template>
-    <p>Homeダオ。</p>
-    <p>{{ $page.props.user }}</p>
+    <app-layout>
 
+    </app-layout>
 </template>
 
 <script>
