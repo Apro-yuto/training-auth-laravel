@@ -15,9 +15,9 @@ class CreateBookReadTable extends Migration
     {
         Schema::create('book_read', function (Blueprint $table) {
             $table->primary(['user_id', 'read_id']);
-            $table->timestamps();
             $table->foreignId('user_id')->constrained();
             $table->foreignId('read_id')->constrained();
+            $table->timestamps();
 
         });
     }
