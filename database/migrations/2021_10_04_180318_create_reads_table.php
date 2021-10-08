@@ -15,8 +15,8 @@ class CreateReadsTable extends Migration
     {
         Schema::create('reads', function (Blueprint $table) {
             $table->id();
-            $table->integer('read_title');
-            $table->integer('read_time');
+            $table->string('read_title');
+            $table->string('read_time');
             $table->string('read_thought');
             $table->timestamps();
             $table->softDeletes();
