@@ -12,7 +12,10 @@ const glob = require('glob');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js').vue()
+mix.js('resources/js/app.js', 'public/js').vue({
+        extractStyles: true,
+        globalStyles: './resources/sass/_config.scss',
+    })
     .postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),
         require('tailwindcss'),
